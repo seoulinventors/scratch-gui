@@ -46,6 +46,17 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+/**
+ * MicroBit More extension
+ */
+
+import microbitMoreIconURL from './entry/entry-icon.png';
+import microbitMoreInsetIconURL from './entry/inset-icon.svg';
+import microbitMoreConnectionIconURL from './entry/connection-icon.svg';
+import microbitMoreConnectionSmallIconURL from './entry/connection-small-icon.svg';
+import translations from './entry/translations.json';
+const version = 'v2-0.2.5';
+
 export default [
     {
         name: (
@@ -195,6 +206,44 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/microbit'
+    },
+    { 
+        name: (
+            <FormattedMessage
+                defaultMessage= 'MicroBit More'
+                description= 'Name of this extension'
+                id= 'mbitMore.entry.name'
+            /> 
+        ),
+        extensionId: 'microbitMore',
+        //extensionURL: 'https://microbit-more.github.io/dist/microbitMore.mjs',
+        collaborator: 'Yengawa Lab',
+        iconURL: microbitMoreIconURL,
+        insetIconURL: microbitMoreInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage= 'Play with all functions of micro:bit.'
+                description= "Description for the 'Microbit More' extension"
+                id= 'mbitMore.entry.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: microbitMoreConnectionIconURL,
+        connectionSmallIconURL: microbitMoreConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage= 'Connecting'
+                description= 'Message to help people connect to their micro:bit.'
+                id= 'gui.extension.microbit.connectingMessage'
+            />
+        ),
+        helpLink: 'https://microbit-more.github.io/',
+        translationMap: translations
     },
     {
         name: 'LEGO MINDSTORMS EV3',
