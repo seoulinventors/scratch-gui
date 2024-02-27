@@ -177,7 +177,7 @@ export default [
         ),
         featured: true
     },
-    {
+ /* {
         name: 'micro:bit',
         extensionId: 'microbit',
         collaborator: 'micro:bit',
@@ -206,23 +206,23 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/microbit'
-    },
+    },*/
     { 
         name: (
             <FormattedMessage
-                defaultMessage= 'MicroBit More'
+                defaultMessage= "Seoul Inventor's micro:bit"
                 description= 'Name of this extension'
                 id= 'mbitMore.entry.name'
             /> 
         ),
         extensionId: 'microbitMore',
         //extensionURL: 'https://microbit-more.github.io/dist/microbitMore.mjs',
-        collaborator: 'Yengawa Lab',
-        iconURL: microbitMoreIconURL,
-        insetIconURL: microbitMoreInsetIconURL,
+        collaborator: "Seoul Inventor's Club",
+        iconURL: microbitIconURL,
+        insetIconURL: microbitInsetIconURL,
         description: (
             <FormattedMessage
-                defaultMessage= 'Play with all functions of micro:bit.'
+                defaultMessage= 'micro:bit extension for Seoul Inventors Club'
                 description= "Description for the 'Microbit More' extension"
                 id= 'mbitMore.entry.description'
             />
@@ -233,8 +233,8 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: microbitMoreConnectionIconURL,
-        connectionSmallIconURL: microbitMoreConnectionSmallIconURL,
+        connectionIconURL: microbitConnectionIconURL,
+        connectionSmallIconURL: microbitConnectionSmallIconURL,
         connectingMessage: (
             <FormattedMessage
                 defaultMessage= 'Connecting'
