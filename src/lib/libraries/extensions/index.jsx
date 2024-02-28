@@ -242,7 +242,7 @@ export default [
                 id= 'gui.extension.microbit.connectingMessage'
             />
         ),
-        helpLink: 'https://microbit-more.github.io/',
+        helpLink: 'https://seoulinventorsclub.notion.site/micro-bit-extension-for-Scratch3-86b3e4944bf1431dbced80bc3ceb819b?pvs=4',
         translationMap: translations
     },
     {
